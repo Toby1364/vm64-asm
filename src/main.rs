@@ -101,7 +101,6 @@ fn main() {
     if let Some(cfg_path) = cfg_path {
         let cfg = fs::read_to_string(cfg_path).expect("Unable to read config file.")
             .replace("\n", " ")
-            .replace("_", "")
             .replace("\r", "")
             .replace("  ", " ")
             .replace(", ", " ")
