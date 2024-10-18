@@ -2,18 +2,18 @@
 mov r0 &000000_000000
 mov r3 &010000_010000
 mov r5 &000100_000100
-;mov rc &000010_000010
+mov rc &000010_000010
 
-mov r2 &4000_0000
+mov r2 &2000_0000
 
-mov r6 &960
+mov r6 &780
 mov r4 6
-mov r8 &3fea_0700
+mov r8 &1FF1_F000
 mov rb 3
 
 reset:
-mov r1 &3fea_0700
-;add r0 r0 rc
+mov r1 &1FF1_F000
+add r5 r5 rc
 
 loop:
 
